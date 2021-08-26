@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Computer Science
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  background.url{
+    opacity: 0.5;
+  }
+body {
+  background: url('https://images.unsplash.com/photo-1595154038117-db4cda69f11d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ 
+ 
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+</style>
+<style>
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+    <h3 style="text-align: center;margin-top:60px; font-weight: bold;">Syllabus</h3>
+</div>
+
+<div class="container-fluid " style="font-weight: bold; z-index:-1;">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 1:</h5>
+          </div>
+          <h5 class="mb-1 ">D.C. Circuits:</h5>
+          <p class ="mb-1"> Voltage and current sources, dependent and independent sources, Units and dimensions, Source Conversion, Ohm’s Law, Kirchhoff’s Law, Superposition theorem, Thevenin’s theorem and their application for analysis of series and parallel resistive circuits excited by independent voltage sources, Power & Energy in such circuits. Mesh & nodal analysis, Star Delta transformation & circuits.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 2:</h5>
+          </div>
+          <h5 class="mb-1 ">1- phase AC Circuits</h5>
+          <p class ="mb-1">Generation of sinusoidal AC voltage, definition of average value, R.M.S. value, form factor and peak factor of AC quantity , Concept of phasor, Concept of Power factor, Concept of impedance and admittance, Active, reactive and apparent power, analysis of R-L, R-C, R-L-C series & parallel circuit</p>
+          <p class ="mb-1">3-phase AC Circuits: Necessity and advantages of three phase systems, Meaning of Phase sequence, balanced and unbalanced supply and loads. Relationship BTtween line and phase values for balanced star and delta connections. Power in balanced & unbalanced three-phase system and their measurements</p>
+        </a>
+        
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 3:</h5>
+          </div>
+          <h5 class="mb-1 ">Magnetic Circuits:</h5>
+          <p class ="mb-1">Magnetic Circuits: Basic definitions, magnetization characteristics of Ferro magnetic materials, self inductance and mutual inductance, energy in linear magnetic systems, coils connected in series, AC excitation in magnetic circuits, magnetic field produced by current carrying conductor, Force on a current carrying conductor. Induced voltage, laws of electromagnetic Induction, direction of induced E.M.F.</p>
+          <p class="mb-1">Single phase transformer- General construction, working principle, e.m.f. equation, equivalent circuits, phasor diagram, voltage regulation, losses and efficiency, open circuit and short circuit test U</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 4:</h5>
+          </div>
+          <h5 class="mb-1 ">Electrical Machines</h5>
+          <p class ="mb-1">Construction, Classification & Working Principle of DC machine, induction machine and synchronous machine. Working principle & Emf equation of 3-Phase induction motor, Concept of slip in 3- Phase induction motor, Explanation of Torque-slip characteristics of 3-Phase induction motor. Types of losses occurring in electrical machines. Applications of DC machine, induction machine and synchronous machine.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 5:</h5>
+          </div>
+          <h5 class="mb-1 ">Basic Electronics:  </h5>
+          <p class ="mb-1"> NumBTr systems & Their conversion used in digital electronics, Demorgan’s theorem, Logic Gates, half and full adder circuits, R-S flip flop, J-K flip flop. Introduction to Semiconductors, Diodes, V-I characteristics, Bipolar junction transistors (BJT) and their working, introduction to CC, CB & CE transistor configurations, different configurations and modes of operation of BJT</p>
+        </a>
+
+      </div>
+</div>
+<div>
+  <div class="card-columns card-columns-justified">
+    <div class="dropdown ">
+      <button class="dropbtn">NOTES FOR ALL THE CHAPTERS</button>
+      <div class="dropdown-content">
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21799&authkey=AAKLvG0QQnFiD_k&em=2">D.C. Circuits</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21795&authkey=AISWH6OlDAObgbQ&em=2">1- phase AC Circuit</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21797&authkey=AIGYpQjbyezd8dA&em=2">Magnetic Circuits</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21793&authkey=AHbnIAepClHtUMA&em=2">Electrical Machines</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21798&authkey=AF9ntjONSTRyPCA&em=2">Basic Electronics</a>
+      </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">PREVIOUS YEARS  QUESTIONS</button>
+      <div class="dropdown-content">
+        <a href="https://www.rgpvonline.com/btech-cse-question-papers.html">QUESTIONS LINK </a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">SPECIAL NOTES</button>
+      <div class="dropdown-content">
+        <a href="#">Click Here For The Link</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">BEST YOUTUBE VIDEOS CHAPTERS </button>
+      <div class="dropdown-content">
+        <a href="https://youtube.com/playlist?list=PLBlnK6fEyqRikb1dBBor_S0xdRsOj1cxu">D.C. Circuits</a>
+        <a href="https://youtube.com/playlist?list=PLBlnK6fEyqRi_23q92nQcAnVSM4IzkS9u">1- phase AC Circuit</a>
+        <a href="https://youtube.com/playlist?list=PL7nVAsewY9-EFBXZ3DxAB5qNagzTq5S_c">Magnetic Circuits</a>
+        <a href="https://youtube.com/playlist?list=PL9RcWoqXmzaJpnkjoNleyFNgGk9-znOji">Electrical Machines</a>
+        <a href="https://youtube.com/playlist?list=PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS">Basic Electronics</a>
+        
+      </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}

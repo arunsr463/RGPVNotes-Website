@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Computer Science
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  background.url{
+    opacity: 0.5;
+  }
+body {
+  background: url('https://images.unsplash.com/photo-1595154038117-db4cda69f11d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ 
+ 
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+} */
+</style>
+<style>
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+    <h3 style="text-align: center;margin-top:60px; font-weight: bold;">Syllabus</h3>
+</div>
+
+
+<div class="container-fluid " style="font-weight:bold; z-index:-1;">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 1:</h5>
+          </div>
+          <p class="mb-1 ">Module 1:Ordinary Differential Equations I </p>
+          <p class ="mb-1">  Differential Equations of First Order and First Degree (Leibnitz linear, Bernoulli’s, Exact), Differential Equations of First Order and Higher Degree, Higher order differential equations with constants coefficients, Homogeneous Linear Differential equations, Simultaneous Differential Equations.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 2:</h5>
+          </div>
+          <p class="mb-1 ">Module 2:Ordinary differential Equations II</p>
+          <p class ="mb-1">Second order linear differential equations with variable coefficients, Method of variation of parameters, Power series solutions; Legendre polynomials, Bessel functions of the first kind and their properties.</p>
+          
+        </a>
+        
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 3:</h5>
+          </div>
+          <p class="mb-1 ">Module 3: Partial Differential Equations</p>
+          <p class ="mb-1"> Formulation of Partial Differential equations, Linear and Non-Linear Partial Differential Equations, Homogeneous Linear Partial Differential Equations with Constants Coefficients.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 4:</h5>
+          </div>
+          <p class="mb-1 ">Module 4: Functions of Complex Variable </p>
+          <p class ="mb-1">Functions of Complex Variables: Analytic Functions, Harmonic Conjugate, Cauchy-Riemann Equations (without proof), Line Integral, Cauchy-Goursat theorem (without proof), Cauchy Integral formula (without proof), Singular Points, Poles & Residues, Residue Theorem, Application of Residues theorem for Evaluation of Real Integral (Unit Circle).</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 5:</h5>
+          </div>
+          <p class="mb-1 ">Module 5: Vector Calculus </p>
+          <p class ="mb-1">Differentiation of Vectors, Scalar and vector point function, Gradient, Geometrical meaning of gradient, Directional Derivative, Divergence and Curl, Line Integral, Surface Integral and Volume Integral, Gauss Divergence, Stokes and Green theorems.</p>
+        </a>
+      </div>
+</div>
+<div>
+  <div class="card-columns card-columns-justified">
+    <div class="dropdown ">
+      <button class="dropbtn">NOTES FOR ALL THE CHAPTERS</button>
+      <div class="dropdown-content">
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21762&authkey=AB_iti0KQsA4hsE&em=2">Module 1:Ordinary Differential Equations I</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21764&authkey=AGuq-_Okl2rFsmk&em=2">Module 2:Ordinary differential Equations II</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21761&authkey=AKjP2K6zUT9r4L4&em=2">Module 3: Partial Differential Equations</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21759&authkey=ANjh2_2hlK5H6cU&em=2">Module 4: Functions of Complex Variable </a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21760&authkey=AO41XFSJyfzac0A&em=2">Module 5: Vector Calculus </a>
+      </div>
+    </div>
+   
+    <div class="dropdown">
+      <button class="dropbtn">PREVIOUS YEARS  QUESTIONS</button>
+      <div class="dropdown-content">
+        <a href="https://www.rgpvonline.com/btech-cse-question-papers.html">QUESTIONS LINK </a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">SPECIAL NOTES</button>
+      <div class="dropdown-content">
+        <a href="#">Click Here For The Link</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">BEST YOUTUBE VIDEOS CHAPTERS </button>
+      <div class="dropdown-content">
+        <a href="https://youtube.com/playlist?list=PLdM-WZokR4tbGKbeK8fDIdEN0NEcvAQlC">Module 1:Ordinary Differential Equations I</a>
+        <a href="https://youtube.com/playlist?list=PLdM-WZokR4tbGKbeK8fDIdEN0NEcvAQlC">Module 2:Ordinary differential Equations II</a>
+        <a href="https://youtube.com/playlist?list=PLsVTfW51pHcbeKRr43Hf-Qclk9pE2d54T">Module 3: Partial Differential Equations</a>
+        <a href="https://youtube.com/playlist?list=PLhSp9OSVmeyITvYvCWwrYBiPkzsCNSOWu">Module 4: Functions of Complex Variable </a>
+        <a href="https://youtube.com/playlist?list=PLDHc8BNi24Y1R_iMaoGll0SnJRMZapHyb">Module 5: Vector Calculus </a>
+
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+</body>
+</html>
+
+{% endblock body %}

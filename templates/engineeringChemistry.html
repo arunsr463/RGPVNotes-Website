@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Computer Science
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  background.url{
+    opacity: 0.5;
+  }
+body {
+  background: url('https://images.unsplash.com/photo-1595154038117-db4cda69f11d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ 
+ 
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+</style>
+<style>
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid" >
+    <h3 style="text-align: center;margin-top:60px; font-weight: bold; margin-top:100px;">Syllabus</h3>
+</div>
+
+
+<div class="container-fluid " style="font-weight:bold; z-index:-1;">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 1:</h5>
+          </div>
+          <p class="mb-1 ">Water – Analysis, Treatments and Industrial Applications</p>
+          <p class ="mb-1"> Sources, Impurities, Hardness & its units, Determination of hardness by EDTA method,</br> Alkalinity & It’s determination and related numerical problems.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 2:</h5>
+          </div>
+          <p class="mb-1 ">Boiler problem & softening methods</p>
+          <p class ="mb-1">Boiler troubles (Sludge & Scale, Priming & Foaming, Boiler Corrosion, Caustic Embrittlement),</p>
+          <p class ="mb-1">Softening methods (Lime-Soda, Zeolite and Ion Exchange Methods) and related numerical problems.</p>
+        </a>
+        
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 3:</h5>
+          </div>
+          <p class="mb-1 ">Lubricants and Lubrication</p>
+          <p class ="mb-1"> Introduction, Mechanism of lubrication, Classification of lubricants, significance & determination of</br>Viscosity and Viscosity Index, Flash & Fire Points, Cloud & Pour Points, Aniline Point, Acid </br>Number, Saponification Number, Steam Emulsification Number and related numerical problems.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 4:</h5>
+          </div>
+          <p class="mb-1 ">Polymer & polymerization</p>
+          <p class ="mb-1">Introduction, types of polymerisation, Classification, mechanism of polymerisation (Free radical & Ionic</br> polymerization). Thermoplastic &Thermosetting polymers Elementary idea of Biodegradable polymers,</br> preparation, properties & uses of the following polymers- PVC, PMMA, Teflon, Nylon 6, Nylon 6:6,</br> Polyester phenol formaldehyde, Urea- Formaldehyde, Buna N, Buna S, Vulcanization of Rubber.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 5:</h5>
+          </div>
+          <p class="mb-1 ">Phase equilibrium and Corrosion</p>
+          <p class ="mb-1">Phase diagram of single component system (Water) Phase diagram of binary Eutectic System ( Cu-Ag.)</br> Corrosion: Types, Mechanisms & prevention.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 6:</h5>
+          </div>
+          <p class="mb-1 ">Spectroscopic techniques and application</p>
+          <p class ="mb-1"> rinciple, Instrumentation & Applications, electronics spectroscopy, Vibrational & Rotational</br> Spectroscopy of diatomic molecules.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 7:</h5>
+          </div>
+          <p class="mb-1 ">Periodic properties</p>
+          <p class ="mb-1">Effective Nuclear Charge, Variations: S, P, d & f Orbital energies of atoms in periodic table, Electronics</br> Configuration, atomic & Ionic sizes, electron affinity & electro negativity, Ploarizability & Oxidation</br> States.</p>
+        </a>
+
+       
+      </div>
+</div>
+<!-- <div>
+  <div class="card-columns card-columns-justified">
+    <div class="dropdown ">
+      <button class="dropbtn">NOTES FOR ALL THE CHAPTERS</button>
+      <div class="dropdown-content">
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21728&authkey=ANmmlULSxLLyRao&em=2">Water – Analysis, Treatments and Industrial Applications</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21729&authkey=APWfcV6l_rhTYWs&em=2">Boiler problem & softening methods</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21730&authkey=ABXRxLpF2erhmDk&em=2">Lubricants and Lubrication</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21733&authkey=AAC-cwr-tc_r2Bk&em=2">Polymer & polymerization</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21731&authkey=ANmr33gCTrVXODk&em=2">Phase equilibrium and Corrosion</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21727&authkey=ANilbCin0oCqiEM&em=2">Spectroscopic techniques and application</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21732&authkey=AIyacBBYYadsw00&em=2">Periodic properties</a>
+      </div>
+    </div>
+   
+    <div class="dropdown">
+      <button class="dropbtn">PREVIOUS YEARS  QUESTIONS</button>
+      <div class="dropdown-content">
+        <a href="https://www.rgpvonline.com/be/be-101-engineering-chemistry-jun-2020.pdf">JUN 2020 </a>
+        <a href="https://www.rgpvonline.com/be/bt-101-engineering-chemistry-nov-2019.pdf">NOVEMBER 2019 </a>
+        <a href="https://www.rgpvonline.com/be/bt-1001-engineering-chemistry-may-2019.pdf">MAY 2019 </a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">PREVIOUS YEARS SOLUTIONS</button>
+      <div class="dropdown-content">
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">SPECIAL NOTES</button>
+      <div class="dropdown-content">
+        <a href="https://www.lkouniv.ac.in/site/writereaddata/siteContent/202003241126075319ranvijay_engg_water_technology.pdf">Water Analysis And Treatment</a>
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">BEST YOUTUBE VIDEOS CHAPTERS </button>
+      <div class="dropdown-content">
+        <a href="https://youtube.com/playlist?list=PLgzsL8klq6DIOpwb57vb_ha_IUyNKRUyS">Water – Analysis, Treatments and Industrial Applications</a>
+        <a href="https://youtube.com/playlist?list=PLiYAH68F-CTCymTIN25OO-AseEy07aySk">Boiler problem & softening methods</a>
+        <a href="https://youtube.com/playlist?list=PLiYAH68F-CTAx-RIvbkUSFffU4DWtY-nV">Lubricants and Lubrication</a>
+        <a href="https://youtube.com/playlist?list=PLiYAH68F-CTDvXZ2G5JICP91oxb1WX1d_">Polymer & polymerization</a>
+        <a href="https://youtube.com/playlist?list=PLHWPZcIu1IxDH4XC6TZ-753wkjSS44q9R">Phase equilibrium and Corrosion</a>
+        <a href="https://youtube.com/playlist?list=PLBcd6Ctoy2alCZwY30sfJ2KEp9vKM0Il7">Spectroscopic techniques and application</a>
+        <a href="https://youtube.com/playlist?list=PLHWPZcIu1IxDyJAGxeeTSneBFwhhbdStX">Periodic properties</a>
+      </div>
+    </div>
+    
+    
+  </div>
+</div> -->
+
+<div class="container-fluid" style="margin-top:40px;">
+  <div class="container-fluid" style="display:flex;">
+    <div class="card rounded-circle text-white bg-white mb-3" style="width:400px;height:200px;margin:30px;">
+      <!-- <div class="card-header">NOTES</div> -->
+      <div class="container" style="margin-top:60px; text-align: center;color:black;">
+        <h4>NOTES</h4>
+      </div>
+      
+      <div class="dropdown" style="margin-top:0px;text-align: center;">
+      <button class="dropbtn bg-primary">According To Your Syllabus</button>
+        <div class="dropdown-content bg-white" >
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21728&authkey=ANmmlULSxLLyRao&em=2">Water – Analysis, Treatments and Industrial Applications</a>
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21729&authkey=APWfcV6l_rhTYWs&em=2">Boiler problem & softening methods</a>
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21730&authkey=ABXRxLpF2erhmDk&em=2">Lubricants and Lubrication</a>
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21733&authkey=AAC-cwr-tc_r2Bk&em=2">Polymer & polymerization</a>
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21731&authkey=ANmr33gCTrVXODk&em=2">Phase equilibrium and Corrosion</a>
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21727&authkey=ANilbCin0oCqiEM&em=2">Spectroscopic techniques and application</a>
+          <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21732&authkey=AIyacBBYYadsw00&em=2">Periodic properties</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card rounded-circle text-white bg-white mb-3" style="width:400px;height:200px;margin:30px;">
+      <!-- <div class="card-header">Header</div> -->
+      <div class="container" style="margin-top:60px; text-align: center;color:black;">
+        <h4>QUESTIONS</h4>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn bg-primary" style="margin-left: 80px;" >Previous Year Questions</button>
+        <div class="dropdown-content">
+          <a href="https://www.rgpvonline.com/be/be-101-engineering-chemistry-jun-2020.pdf">JUN 2020 </a>
+          <a href="https://www.rgpvonline.com/be/bt-101-engineering-chemistry-nov-2019.pdf">NOVEMBER 2019 </a>
+          <a href="https://www.rgpvonline.com/be/bt-1001-engineering-chemistry-may-2019.pdf">MAY 2019 </a>
+        </div>
+        </div>
+    </div>
+    <div class="card rounded-circle text-white bg-white mb-3" style="width:400px;height:200px;margin:30px;" >
+      <!-- <div class="card-header">Header</div> -->
+      <div class="container" style="margin-top:60px; text-align: center;color:black;">
+        <h4>ANSWERS</h4>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn bg-primary" style="margin-left:80px">Previous Years Answers</button>
+        <div class="dropdown-content">
+          <a href="#">LINK </a>
+          <a href="#">LINK </a>
+          <a href="#">LINK </a>
+          <a href="#">LINK </a>
+        </div>
+        </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="container-fluid" style="margin-top:40px;">
+  <div class="container-fluid" style="display:flex;">
+    <div class="card rounded-circle text-white bg-white mb-3" style="width:400px;height:200px;margin:30px;">
+      <!-- <div class="card-header">NOTES</div> -->
+      <div class="container" style="margin-top:60px; text-align: center;color:black;">
+        <h4>SPECIAL NOTES</h4>
+      </div>
+      
+      <div class="dropdown" style="margin-top:0px;text-align: center;">
+      <button class="dropbtn bg-primary">Teacher's Special Notes</button>
+      <div class="dropdown-content">
+        <a href="https://lecturenotes.in/notes/29140-note-for-green-technology-gt-by-abhishek-apoorv?reading=true">Water – Analysis, Treatments and Industrial Applications</a>
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+        <a href="#">LINK </a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="card rounded-circle text-white bg-white mb-3" style="width:400px;height:200px;margin:30px;">
+      <!-- <div class="card-header">Header</div> -->
+      <div class="container" style="margin-top:60px; text-align: center;color:black;">
+        <h4>YouTube</h4>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn bg-primary" style="margin-left: 60px;">Recommended YouTube Videos</button>
+        <div class="dropdown-content">
+          <a href="https://youtube.com/playlist?list=PLgzsL8klq6DIOpwb57vb_ha_IUyNKRUyS">Water – Analysis, Treatments and Industrial Applications</a>
+          <a href="https://youtube.com/playlist?list=PLiYAH68F-CTCymTIN25OO-AseEy07aySk">Boiler problem & softening methods</a>
+          <a href="https://youtube.com/playlist?list=PLiYAH68F-CTAx-RIvbkUSFffU4DWtY-nV">Lubricants and Lubrication</a>
+          <a href="https://youtube.com/playlist?list=PLiYAH68F-CTDvXZ2G5JICP91oxb1WX1d_">Polymer & polymerization</a>
+          <a href="https://youtube.com/playlist?list=PLHWPZcIu1IxDH4XC6TZ-753wkjSS44q9R">Phase equilibrium and Corrosion</a>
+          <a href="https://youtube.com/playlist?list=PLBcd6Ctoy2alCZwY30sfJ2KEp9vKM0Il7">Spectroscopic techniques and application</a>
+          <a href="https://youtube.com/playlist?list=PLHWPZcIu1IxDyJAGxeeTSneBFwhhbdStX">Periodic properties</a>
+        </div>
+        </div>
+    </div>
+    <div class="card rounded-circle text-white bg-white mb-3" style="font-style:bold;width:400px;height:200px;margin:30px;" >
+      <!-- <div class="card-header">Header</div> -->
+      <div class="container" style="margin-top:60px; text-align: center;color:black;">
+        <h4>BOOKS</h4>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn bg-primary" style="margin-left:90px">Recommended Books</button>
+        <div class="dropdown-content">
+          <a href="https://drive.google.com/file/d/18OuMh002bcGipgcUI985BCs1H6eU8Bid/view">First Book</a>
+          <a href="#">Second Book </a>
+          <a href="#">LINK </a>
+          <a href="#">LINK </a>
+        </div>
+        </div>
+    </div>
+
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}

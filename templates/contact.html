@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contacts
+{% endblock title %}
+
+{% block body %}
+<style>
+  body{
+    background: black;
+  }
+</style>
+<div class="container" style="font-size:40px;margin-top:100px;margin-bottom:50px; height:50px;background:black; color:blanchedalmond; font-weight:bold ; text-align:center;">
+    Share Your Contact
+</div>
+<div class="container"style="margin-bottom:100px;" >
+  <form method="post" action="/contact" class="row g-3" >
+  {% csrf_token %}
+    <div class="col-md-4">
+      <label for="fname" class="form-label" style="color:blanchedalmond">First name</label>
+      <input type="text" class="form-control is-valid" id="fname" name="fname" placeholder="First Name" required>
+    </div>
+    <div class="col-md-4">
+      <label for="lname" class="form-label" style="color:blanchedalmond">Last name</label>
+      <input type="text" class="form-control is-valid" id="lname" name="lname" placeholder="Last Name" required>
+    </div>
+    <div class="col-md-4">
+      <label for="mail" class="form-label" style="color:blanchedalmond">Your Mail</label>
+      <input type="text" class="form-control is-valid" id="mail" name="mail" placeholder="Mail" required>
+    </div>
+    <div class="col-md-3" style="width: 500px;">
+      <label for="city" class="form-label" style="color:blanchedalmond">City</label>
+      <select class="form-select is-invalid" id="city" name="city" aria-describedby="validationServer04Feedback" placeholder="City" required>
+        <option selected disabled value="">City</option>
+        <option>Nalanda</option>
+        <option>Patna</option>
+        <option>Bhopal</option>
+      </select>
+      <div id="state" name="state" class="invalid-feedback" style="color:blanchedalmond">
+        Please select a valid city.
+      </div>
+    </div>
+    <div class="col-md-3" style="width: 500px;">
+      <label for="state" class="form-label" style="color:blanchedalmond">State</label>
+      <select class="form-select is-invalid" id="state" name="state" aria-describedby="validationServer04Feedback" placeholder="State" required>
+        <option selected disabled value="">States</option>
+        <option>Bihar</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharastra</option>
+      </select>
+   
+      <div id="state" name="state" class="invalid-feedback" style="color:blanchedalmond">
+        Please select a valid state.
+      </div>
+    </div>
+    
+
+    <div class="col-md-4">
+      <label for="desc" class="form-label" style="color:blanchedalmond">Suggestion/Query</label>
+      <input type="text" class="form-control is-valid" id="desc" name="desc"  required>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+</div>
+
+
+{% endblock body %}

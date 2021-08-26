@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Computer Science
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  background.url{
+    opacity: 0.5;
+  }
+body {
+  background: url('https://images.unsplash.com/photo-1595154038117-db4cda69f11d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ 
+ 
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+} */
+</style>
+<style>
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+    <h3 style="text-align: center;margin-top:60px; font-weight: bold;">Syllabus</h3>
+</div>
+
+
+<div class="container-fluid " style="font-weight:bold; z-index:-1;">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 1:</h5>
+          </div>
+          <p class="mb-1 ">Materials </p>
+          <p class ="mb-1">  Classification of engineering material, Composition of Cast iron and Carbon steels, Iron Carbon diagram. Alloy steels their applications. Mechanical properties like strength, hardness, toughness , ductility, brittleness , malleability etc. of materials , Tensile test- Stress-strain diagram of ductile and brittle materials ,Hooks law and modulus of elasticity, Hardness and Impact testing of materials, BHN etc.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 2:</h5>
+          </div>
+          <p class="mb-1 ">Measurement</p>
+          <p class ="mb-1"> Concept of measurements, errors in measurement, Temperature, Pressure, Velocity, Flow strain, Force and torque measurement, Vernier caliper, Micrometer, Dial gauge, Slip gauge, Sine-bar and Combination set.
+                            Production Engineering: Elementary theoretical aspects of production processes like casting, carpentry, welding etc Introduction to Lathe and Drilling machines and their various operations.</p>
+          
+        </a>
+        
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 3:</h5>
+          </div>
+          <p class="mb-1 ">Fluids</p>
+          <p class ="mb-1">  Fluid properties pressure, density and viscosity etc . Types of fluids , Newton’s law of viscosity , Pascal’s law , BTrnoulli’s equation for incompressible fluids , Only working principle of Hydraulic machines, pumps, turbines, Reciprocating pumps .</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 4:</h5>
+          </div>
+          <p class="mb-1 ">Thermodynamics </p>
+          <p class ="mb-1"> Thermodynamic system, properties, state, process, Zeroth, First and second law of thermodynamics, thermodynamic processes at constant pressure, volume, enthalpy & entropy. Steam Engineering : Classification and working of boilers, mountings and accessories of boilers, Efficiency and performance analysis, natural and artificial draught, steam properties, use of steam tables.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 5:</h5>
+          </div>
+          <p class="mb-1 ">Reciprocating Machines  </p>
+          <p class ="mb-1">Working principle of steam Engine, Carnot, Otto, Diesel and Dual cycles P-V & T-S diagrams and its efficiency, working of Two stroke & Four stroke Petrol & Diesel engines. Working principle of compressor.</p>
+        </a>
+      </div>
+</div>
+<div>
+  <div class="card-columns card-columns-justified">
+    <div class="dropdown ">
+      <button class="dropbtn">NOTES FOR ALL THE CHAPTERS</button>
+      <div class="dropdown-content">
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21815&authkey=ACPxq6hrhXPdMnQ&em=2">Materials</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21810&authkey=AAwCVNWGEbwE8z0&em=2">Measurement</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21811&authkey=AJ4Yvf6CZ99arC8&em=2">Fluids</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21813&authkey=ADmn07z_okvhOvM&em=2">Thermodynamics </a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21814&authkey=AFnd6ObqGUhXGGA&em=2">Reciprocating Machines  Part-1 </a>
+         <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21812&authkey=APaz-3RwnMbsOMo&em=2">Reciprocating Machines  Part-2</a>
+      </div>
+    </div>
+   
+    <div class="dropdown">
+      <button class="dropbtn">PREVIOUS YEARS  QUESTIONS</button>
+      <div class="dropdown-content">
+        <a href="https://www.rgpvonline.com/btech-cse-question-papers.html">QUESTIONS LINK </a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">SPECIAL NOTES</button>
+      <div class="dropdown-content">
+        <a href="#">Click Here For The Link</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">BEST YOUTUBE VIDEOS CHAPTERS </button>
+      <div class="dropdown-content">
+        <a href="#">Materials</a>
+        <a href="#">Measurement</a>
+        <a href="#">Fluids</a>
+        <a href="#">Thermodynamics </a>
+        <a href="#">Reciprocating Machines </a>
+
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+</body>
+</html>
+
+{% endblock body %}

@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Computer Science
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  background.url{
+    opacity: 0.5;
+  }
+body {
+  background: url('https://images.unsplash.com/photo-1595154038117-db4cda69f11d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ 
+ 
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+} */
+</style>
+<style>
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+    <h3 style="text-align: center;margin-top:60px; font-weight: bold;">Syllabus</h3>
+</div>
+
+<div class="container-fluid " style="font-weight: bold; z-index:-1;">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 1:</h5>
+          </div>
+          <p class="mb-1 ">Module 1: Calculus: (10 hours):</p>
+          <p class ="mb-1"> Rolle’s theorem, Mean Value theorems, Expansion of functions by Mc. Laurin’s </br>and Taylor’s for one variable; Taylor’s theorem for function of two variables, Partial</br> Differentiation, Maxima & Minima (two and three variables), Method of Lagranges Multipliers</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 2:</h5>
+          </div>
+          <p class="mb-1 ">Module 2: Calculus: (8 hours):</p>
+          <p class ="mb-1">Definite Integral as a limit of a sum and Its application in summation of series;</br> Beta and Gamma functions and their properties; Applications of definite integrals </br>to evaluate surface areas and volumes of revolutions. Multiple Integral, </br>Change the order of the integration, Applications of multiple integral for calculating area and volumes of the curves</p>
+        </a>
+        
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 3:</h5>
+          </div>
+          <p class="mb-1 ">Module 3: Sequences and series: (6 hours):</p>
+          <p class ="mb-1">Convergence of sequence and series, tests for convergence; Power series, Taylor's</br> series, series for exponential, trigonometric and logarithm functions; Fourier </br>series: Half range sine and cosine series, Parseval’s theorem.</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 4:</h5>
+          </div>
+          <p class="mb-1 ">Module 4: Vector Spaces (8hours):</p>
+          <p class ="mb-1">Vector Space,Vector Sub Space, Linear Combination of Vectors,Linearly Dependent,</br> Linearly Independent, Basis of a Vector Space,Linear Transformations</p>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-transparent" style="color: black" aria-current="true">
+          <div class="d-flex w-100 justify-content-between ">
+            <h5 class="mb-1" style="font-weight: 50px;font-size: 20px;">UNIT 5:</h5>
+          </div>
+          <h5 class="mb-1 ">Module 5: Matrices (8 hours): </h5>
+          <p class ="mb-1">Rank of a Matrix, Solution of Simultaneous Linear Equations by Elementary </br>Transformation, Consistency of Equation, Eigen Values and Eigen Vectors, Diagonalization of</br> Matrices, Cayley-Hamilton theorem and its applications to find inverse.</p>
+        </a>
+
+      </div>
+</div>
+<div>
+  <div class="card-columns card-columns-justified">
+    <div class="dropdown ">
+      <button class="dropbtn">NOTES FOR ALL THE CHAPTERS</button>
+      <div class="dropdown-content">
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21741&authkey=APAKsnhVcbqdNCY&em=2">Module 1: Calculus</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21739&authkey=AAuQlFrBOy2kPF4&em=2">Module 2: Calculus</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21736&authkey=AHzzklyu2iWoY94&em=2">Module 3: Sequences and series:</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21734&authkey=ANfnLdforq-jL_E&em=2">Module 4: Vector Spaces</a>
+        <a href="https://onedrive.live.com/embed?cid=9F0200C1153A2AA1&resid=9F0200C1153A2AA1%21735&authkey=AIHcYXXPJVSMdoE&em=2">Module 5: Matrices</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">DOWNLOAD ALL NOTES </button>
+      <div class="dropdown-content">
+        <a href="https://btech-notes.rgpvnotes.in/2018/12/mathematics-i-bt-102.html">Click Here For The Link</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">PREVIOUS YEARS  QUESTIONS</button>
+      <div class="dropdown-content">
+        <a href="https://www.rgpvonline.com/rgpv-first-year.html">QUESTIONS LINK </a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">SPECIAL NOTES</button>
+      <div class="dropdown-content">
+        <a href="#">Click Here For The Link</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">BEST YOUTUBE VIDEOS CHAPTERS </button>
+      <div class="dropdown-content">
+        <a href="https://youtube.com/playlist?list=PLdM-WZokR4tbCBA4mkvfk2vOH12eRPT2Y">Unit-1 : Calculus</a>
+        <a href="https://youtube.com/playlist?list=PLCo9iBGDThd4tHUL1gdELWDozvaA7wEuO">Unit-2 : Calculus</a>
+        <a href="https://youtube.com/playlist?list=PLKh8s1XuHKXZfPAAAKrMYlW5RLW84lvuJ">Sequence And Series</a>
+        <a href="https://youtube.com/playlist?list=PLwOm_a54I_mjXeAd4qrlk9FgC6or0xte3">Vector Spaces</a>
+        <a href="https://youtube.com/playlist?list=PLBHCnDmkFs-OGxt9RgxlkUm3-n5kyt0U_">Matrices</a>
+        
+      </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}

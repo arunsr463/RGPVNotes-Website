@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Computer Science
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+
+    .tablink:hover {
+      background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+
+    #firstSemsester {
+      background: url('https://images.unsplash.com/photo-1572273869941-45732d6f581c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #secondSemester {
+      background: url('https://images.unsplash.com/photo-1472797694002-724d56a813e3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #thirdSemester {
+      background: url('https://images.unsplash.com/photo-1602144124318-f448134df981?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #forthSemester {
+      background: url('https://images.unsplash.com/photo-1598379232411-d670d6872193?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #fifthSemester {
+      background: url('https://images.unsplash.com/photo-1544830281-1d5169d6b2af?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #sixthSemester {
+      background: url('https://images.unsplash.com/photo-1594377157609-5c996118ac7f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #seventhSemester {
+      background: url('https://images.unsplash.com/photo-1594304888440-48cd07c764cd?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+
+    #eighthSemester {
+      background: url('https://images.unsplash.com/photo-1553044707-316e5582268d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center fixed;
+    }
+  </style>
+  <style>
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px
+      }
+
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-flex justify-content-between " style="margin-top: 75px;">
+    <button class="tablink" onclick="openPage('firstSemsester', this, '#060B5C')" id="defaultOpen">First
+      Semsester</button>
+    <button class="tablink" onclick="openPage('secondSemester', this, 'green')">Second Semsester</button>
+    <button class="tablink" onclick="openPage('thirdSemester', this, 'blue')">Third Semester</button>
+    <button class="tablink" onclick="openPage('forthSemester', this, 'orange')">Forth Semsester</button>
+    <button class="tablink" onclick="openPage('fifthSemester', this, '#060B5C')">Fifth Semsester</button>
+    <button class="tablink" onclick="openPage('sixthSemester', this, 'green')">Sixth Semsester</button>
+    <button class="tablink" onclick="openPage('seventhSemester', this, 'blue')">Seventh Semsester</button>
+    <button class="tablink" onclick="openPage('eighthSemester', this, 'orange')">Eighth Semsester</button>
+  </div>
+  <div id="firstSemsester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="/engineeringChemistry" class="text-center text-dark text-right"
+        style="font-size:40px ; font-weight:bold; text-decoration: none;"> Engineering Chemistry</a>
+      <a href="/mathematics1" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold; text-decoration: none;"> Mathematics-1</a>
+      <a href="/english" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;">
+        English</a>
+      <a href="/basicElectricalAndElectronics" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Basic Electrical And Electronics
+        Engineering</a>
+      <a href="/engineeringDrawing" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;"> Engineering Drawing</a>
+    </ul>
+  </div>
+
+  <div id="secondSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px ;margin-bottom:50px ">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="/engineeringPhysics" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Enineering Physics</a>
+      <a href="/mathematics2" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Mathematics-2</a>
+      <a href="/basicMechanicalEngineering" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Basic Mechanical Engineering</a>
+      <a href="/basicCivilAndMechanicsEngineering" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Basic Civil Engineering & Engineering
+        Mechanics</a>
+      <a href="/basicComputerEngineering" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Basic Computer Engineering</a>
+    </ul>
+  </div>
+
+  <div id="thirdSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="engineeringChemistry" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Energy & Environmental Engineering</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;">
+        Discrete Structure</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;"> Data
+        Structure</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;">
+        Digital System</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;"> Object
+        Oriented Programming & Methodology</a>
+    </ul>
+  </div>
+
+  <div id="forthSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="/algorithms" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;"> Analysis Design Of Algorithms</a>
+      <a href="/softwareEngineering" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Software Engineering</a>
+      <a href="/computerOrginationAndArchitecture" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Comouter Organisation And Architecture</a>
+      <a href="/operatingSystem" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Operating System</a>
+      <a href="/mathematics-3" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;"> Mathemathics-3</a>
+    </ul>
+  </div>
+  <div id="fifthSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="/theoryOfComputation" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Theory Of Computation</a>
+      <a href="/dbms" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;">
+        Database Management System</a>
+      <a href="/departmentElective" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;"> Departmental Elective</a>
+      <a href="/openElective" class="text-center text-dark"
+        style="font-size:40px ; font-weight:bold;text-decoration: none;"> Open Elective</a>
+    </ul>
+  </div>
+  <div id="sixthSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="engineeringChemistry" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;">Machine Learning</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;">
+        Computer Networks</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;">
+        Departmental Elective</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;"> Open
+        Elective</a>
+    </ul>
+  </div>
+  <div id="seventhSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="engineeringChemistry" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;"> Software Architecture</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;">
+        Departmental Elective</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;"> Open
+        Elective</a>
+
+    </ul>
+  </div>
+  <div id="eighthSemester" class="tabcontent">
+    <h3 class="text-center" style="font-size:70px; margin-bottom:50px">SUBJECTS</h3>
+    <ul class="list-group list-group-flush">
+      <a href="engineeringChemistry" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;"> -----------</a>
+      <a href="#" class="text-center text-dark"
+        style="font-size:40px ;font-weight:bold; text-decoration: none;">--------------</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ;font-weight:bold; text-decoration: none;">
+        ---------------</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;">
+        -------------------------</a>
+      <a href="#" class="text-center text-dark" style="font-size:40px ; font-weight:bold;text-decoration: none;">
+        -------------------------</a>
+    </ul>
+  </div>
+
+  <script>
+
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>
+
+{% endblock body %}
